@@ -1,0 +1,379 @@
+{
+
+  "action.devices.traits.ArmDisarm": {
+    "commands": [
+      "action.devices.commands.ArmDisarm"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state": "XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Brightness": {
+    "commands": [
+      "action.devices.commands.BrightnessAbsolute"
+    ],
+    "resources": [
+      {
+        "OID": 3343,
+        "RID": 5548,
+        "state": "brightness",
+        "alias": [
+          {
+            "OID": 3311,
+            "RID": 5851
+          },{
+            "OID": 3301,
+            "RID": 5700
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.CameraStream": {
+    "commands": [
+      "action.devices.commands.GetCameraStream"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state": "XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.ColorSetting": {
+    "commands": [
+      "action.devices.commands.ColorAbsolute"
+    ],
+    "resources": [
+      {
+        "OID": 3335,
+        "RID": 5706,
+        "state": "color",
+        "alias": [
+          {
+            "OID": 3311,
+            "RID": 5706
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Dock": {
+    "commands": [
+      "action.devices.commands.Dock"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.FanSpeed": {
+    "commands": [
+      "action.devices.commands.SetFanSpeed",
+      "action.devices.commands.Reverse"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.LightEffects": {
+    "commands": [
+      "action.devices.commands.ColorLoop",
+      "action.devices.commands.StopEffect"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Locator": {
+    "commands": [
+      "action.devices.commands.Locate"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.LockUnlock": {
+    "commands": [
+      "action.devices.commands.LockUnlock"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Modes": {
+    "commands": [
+      "action.devices.commands.SetModes"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.OnOff": {
+    "commands": [
+      "action.devices.commands.OnOff"
+    ],
+    "resources": [
+      {
+        "OID": 3311,
+        "RID": 5850,
+        "state":"on",
+        "alias": [
+          {
+            "OID": 3312,
+            "RID": 5850
+          },{
+            "OID": 3306,
+            "RID": 5850
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.OpenClose": {
+    "commands": [
+      "action.devices.commands.OpenClose"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.RunCycle": {
+    "commands": [
+      ""
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Scene": {
+    "commands": [
+      "action.devices.commands.ActivateScene"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.StartStop": {
+    "commands": [
+      "action.devices.commands.StartStop",
+      "action.devices.commands.PauseUnpause"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.TemperatureControl": {
+    "commands": [
+      "action.devices.commands.SetTemperature"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.TemperatureSetting": {
+    "commands": [
+      "action.devices.commands.ThermostatTemperatureSetpoint",
+      "action.devices.commands.ThermostatTemperatureSetRange",
+      "action.devices.commands.TemperatureRelative",
+      "action.devices.commands.ThermostatSetMode"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Timer": {
+    "commands": [
+      "action.devices.commands.TimerStart",
+      "action.devices.commands.TimerAdjust",
+      "action.devices.commands.TimerPause",
+      "action.devices.commands.TimerResume",
+      "action.devices.commands.TimerCancel"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "action.devices.traits.Toggles": {
+    "commands": [
+      "action.devices.commands.SetToggles"
+    ],
+    "resources": [
+      {
+        "OID": 0,
+        "RID": 0,
+        "state":"XXX",
+        "alias": [
+          {
+            "OID": 0,
+            "RID": 0
+          }
+        ]
+      }
+    ]
+  }
+}

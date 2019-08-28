@@ -1,0 +1,10 @@
+Il file conf.json va editato con i parametri forniti da google e quelli di personalizzazione dell'interfaccia.
+  Parametri importanti:
+
+        - SmarthomeEndpoint     //  indirizzo per l'interfaccia google
+        - SmarthomePort         //  porta utilizzata per ricevere i messaggi http
+        - google client_id      //  client_id del service provider, si trova su google-action/client information
+        - google client_secret  //  password del service provider, si trova su google-action/client information
+        - google AKI            //  chiave AKI generata da google-action/credenziali/crea chiave/API Key
+
+          IL FILE CONF.XML VIENE UTILIZZATO DALLA CLASSE GOOGLECONF DEL PACKAGE GOOGLEINTERFACE

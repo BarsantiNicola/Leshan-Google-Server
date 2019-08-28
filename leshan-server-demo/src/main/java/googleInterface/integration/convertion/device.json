@@ -1,0 +1,311 @@
+{
+  "AC_UNIT":[
+
+    "action.devices.traits.FanSpeed",
+    "action.devices.traits.Modes",
+    "action.devices.traits.OnOff",
+    "action.devices.traits.TemperatureSetting",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "AIRFRESHENER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "AIRPURIFIER":[
+
+      "action.devices.traits.OnOff",
+      "action.devices.traits.FanSpeed",
+      "action.devices.traits.Modes",
+      "action.devices.traits.Toggles"
+
+  ],
+
+  "AWNING":[
+
+    "action.devices.traits.OpenClose",
+    "action.devices.traits.Modes"
+
+  ],
+
+  "BLINDS":[
+
+    "action.devices.traits.OpenClose",
+    "action.devices.traits.Modes"
+
+  ],
+
+  "BOILER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.TemperatureControl",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "CAMERA":[
+
+    "action.devices.traits.CameraStream"
+
+  ],
+
+  "COFFEE_MAKER":[
+
+    "action.devices.traits.TemperatureControl",
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "CURTAIN":[
+
+    "action.devices.traits.OpenClose"
+
+  ],
+
+  "DISHWASHER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles",
+    "action.devices.traits.RunCycle"
+
+  ],
+
+  "DOOR":[
+
+    "action.devices.traits.OpenClose"
+
+  ],
+
+  "DRYER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles",
+    "action.devices.traits.RunCycle"
+
+  ],
+
+  "FAN":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.FanSpeed",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "FIREPLACE":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "GARAGE":[
+
+    "action.devices.traits.OpenClose"
+
+  ],
+
+  "GATE":[
+
+    "action.devices.traits.OpenClose"
+
+  ],
+
+  "HEATER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.FanSpeed",
+    "action.devices.traits.Modes",
+    "action.devices.traits.TemperatureSetting",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "HOOD":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.FanSpeed",
+    "action.devices.traits.Modes",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "KETTLE":[
+    "action.devices.traits.FanSpeed",
+    "action.devices.traits.Modes",
+    "action.devices.traits.TemperatureControl",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "LIGHT":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Brightness",
+    "action.devices.traits.ColorSetting"
+
+  ],
+
+  "LOCK":[
+
+    "action.devices.traits.LockUnlock"
+
+  ],
+
+  "MICROWAVE":[
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.Timer",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "MOP":[
+
+    "action.devices.traits.Dock",
+    "action.devices.traits.Locator",
+    "action.devices.traits.Modes",
+    "action.devices.traits.OnOff",
+    "action.devices.traits.RunCycle",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "OUTLET":[
+
+    "action.devices.traits.OnOff"
+
+  ],
+
+  "OVEN":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.TemperatureControl",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "PERGOLA":[
+
+    "action.devices.traits.OpenClose"
+
+  ],
+
+  "REFRIGERATOR":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.TemperatureControl",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "SCENE":[
+
+    "action.devices.traits.Scene"
+
+  ],
+
+  "SECURITYSYSTEM":[
+
+    "action.devices.traits.ArmDisarm"
+
+  ],
+
+  "SHOWER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.TemperatureControl"
+
+  ],
+
+  "SHUTTER":[
+
+    "action.devices.traits.OpenClose",
+    "action.devices.traits.Modes"
+
+  ],
+
+  "SPRINKLER":[
+
+    "action.devices.traits.StartStop"
+
+  ],
+
+  "SWITCH":[
+
+    "action.devices.traits.OnOff"
+
+  ],
+
+  "THERMOSTAT":[
+
+    "action.devices.traits.TemperatureSetting"
+
+  ],
+
+  "VACUUM":[
+
+    "action.devices.traits.Dock",
+    "action.devices.traits.Locator",
+    "action.devices.traits.Modes",
+    "action.devices.traits.OnOff",
+    "action.devices.traits.RunCycle",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "VALVE":[
+
+    "action.devices.traits.OpenClose"
+
+  ],
+
+  "WASHER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.StartStop",
+    "action.devices.traits.RunCycle",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "WATERHEATER":[
+
+    "action.devices.traits.OnOff",
+    "action.devices.traits.Modes",
+    "action.devices.traits.TemperatureControl",
+    "action.devices.traits.Toggles"
+
+  ],
+
+  "WINDOW":[
+
+    "action.devices.traits.LockUnlock",
+    "action.devices.traits.OpenClose"
+
+  ]
+
+}

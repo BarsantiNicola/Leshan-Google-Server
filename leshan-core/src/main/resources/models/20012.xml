@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+    <Object ObjectType="MODefinition">
+        <Name>RunCycle</Name>
+        <Description1>This IPSO object is dedicated to remote device who performs cycles.</Description1>
+        <ObjectID>20012</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:20012</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="10024">
+                <Name>CurrentCycle</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents the name of the current cycle performed.</Description>
+            </Item>
+            <Item ID="100025">
+                <Name>NextCicle</Name>
+                <Operations>W</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Object</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>A container to insert a list of cycle to be performed.</Description>
+            </Item>
+            <Item ID="100026">
+                <Name>RemainingTime</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents the time in seconds to the end of the cycle</Description>
+            </Item>
+            <Item ID="100027">
+                <Name>RemainingTotalTime</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents the time in seconds to the end of all cycles.</Description>
+            </Item>
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>

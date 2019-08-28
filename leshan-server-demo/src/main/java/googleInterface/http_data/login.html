@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<HTML>
+	<HEAD>
+	
+		<META charset="utf-8">
+		<META name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+		<TITLE>Smart Home Provider</TITLE>
+		<META name="description" content="Smart Home virtual devices">
+
+
+    <!-- See https://goo.gl/qRE0vM for Chrome on Android theme-color attribute -->
+		<META name="theme-color" content="#3f51b5">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+		<META name="mobile-web-app-capable" content="yes">
+		<META name="application-name" content="Smart Home Login">
+
+    <!-- Add to homescreen for Safari on iOS -->
+		<META name="apple-mobile-web-app-capable" content="yes">
+		<META name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<META name="apple-mobile-web-app-title" content="Smart Home Gizmos">
+		<script type="text/javascript" src="page_component/javascript.js"></script>
+    <!-- login -->
+		<META name="google-signin-scope" content="profile email">
+		
+
+		
+		<STYLE>
+			
+			body {
+				margin: 0;
+				font-family: 'Roboto', 'Noto', sans-serif;
+				line-height: 1.5;
+				min-height: 100vh;
+				background-color: #eeeeee;
+			}
+	
+			div.main {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				width: 100%;
+			}
+
+			div.main > h1 {
+				color: #333;
+			}
+
+			input {
+
+				margin-left: 20px;
+				text-align: left;
+				max-width:200px;
+			}
+
+			button {
+				border: none;
+				color: white;
+				padding: 5px 15px;
+				text-align: center;
+				text-decoration: none;
+				position:relative;
+				right:-102px;
+				font-size: 16px;
+				max-width:90px;
+				background-color: #4285f4;
+			}
+			#loginform{
+
+				min-width:180px;
+			}
+			
+			#logo{
+			
+				position:relative;
+				right:-133px;
+				fixed-width:200px;
+				
+			}
+
+			#error{
+				position:relative;
+				right:35px;
+				top:-23px;
+				color:red;
+				font-weight:bold;
+			}
+
+	
+		</STYLE>
+		
+	</HEAD>
+	<BODY onload="formSubmit();">
+	
+		<div class='main'>
+			<h1>Link your devices to Google</h1>
+			<img src='page_component/assistant-small.png' id="logo" >
+
+			<form action="/login" method='post' id='loginform' >
+
+				<label>Username:  <input value="nicola" type="text"  name="username" id="user" maxlength="10"><br></label>
+				<label>Password:  <input value="barsanti" type="password" name="password"  id="pass" maxlength="10" ><br></label>
+				<input type="hidden" name="redirect" id="Redirect" ></input>
+				<input type="hidden" name="client_id" id="Client_id" ></input>
+				<input type="hidden" name="redirect_uri" id="Redirect_uri" ></input>
+				<input type="hidden" name="state" id="State" ></input>
+
+				<button type="submit" id="SubmitButton" onsubmit="setTimeout('window.close()',1000)">Login</button>
+				<div id="error"></div>
+			</form>
+		</div>
+		
+	</BODY>
+</HTML>

@@ -1,0 +1,14 @@
+{
+  "smarthomeEndpoint": "127.0.0.1",
+  "smarthomePort":  "80",
+  "smarthomeSecurePort": "443",
+  "smarthomeRefreshTime": "3600",
+  "smarthomeSessionTime": "36000",
+  "google_client_id": "ZxjqWpsYj3",
+  "google_client_secret":  "hIMH3uWlMVrqa7FAbKLBoNUMCyLCtv",
+  "google_APIkey": "AIzaSyATVYLToDroHMTLANQLrn0to--XZI3UAEg",
+  "service_Username": "nicola",
+  "service_Password": "barsanti",
+  "request_sync_endpoint": "https://homegraph.googleapis.com/v1/devices:requestSync?key=",
+  "agent_user_id": "asd08has"
+}

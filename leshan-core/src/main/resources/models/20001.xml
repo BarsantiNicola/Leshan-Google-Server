@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+    <Object ObjectType="MODefinition">
+        <Name>ArmDisarm</Name>
+        <Description1>This IPSO object is dedicated to remote device that supports arming and disarming as used in, for example, security systems.</Description1>
+        <ObjectID>20001</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:20001</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="10002">
+                <Name>isArmed</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Boolean</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents the state of the arm.</Description>
+            </Item>
+            <Item ID="100003">
+                <Name>CurrentArmLevel</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Boolean</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100004">
+                <Name>AvailableArmLevel</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource gives the available arm level as a string of words detached</Description>
+            </Item>
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>

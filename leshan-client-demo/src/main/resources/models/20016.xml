@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+    <Object ObjectType="MODefinition">
+        <Name>TemperatureSetting</Name>
+        <Description1>This IPSO object is dedicated to remote ac_unit. The output describe the range of speeds and the current speed set in.</Description1>
+        <ObjectID>20016</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:20016</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="100039">
+                <Name>ThermostatMode</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100040">
+                <Name>Humidity</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Float</Type>
+                <RangeEnumeration>0-100</RangeEnumeration>
+                <Units>%</Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100034">
+                <Name>TemperatureUnit</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100035">
+                <Name>TemperatureSetpoint</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100036">
+                <Name>CurrentTemperature</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100037">
+                <Name>TemperatureSetpointHigh</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+            <Item ID="100038">
+                <Name>TemperatureSetpointLow</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration></RangeEnumeration>
+                <Units></Units>
+                <Description>This resource represents a verse of the fan. If the value is false the fan is in the default direction</Description>
+            </Item>
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
