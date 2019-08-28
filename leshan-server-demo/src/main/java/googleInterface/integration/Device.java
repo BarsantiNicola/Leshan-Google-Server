@@ -96,7 +96,7 @@ public class Device implements Serializable {
         syncInformation = new SyncDevice();
         String[] t = new String[ traits.length ];
         String[] myName = new String[1];
-        myName[0] = "My Lamp";//device.getRegistration().getEndpoint();
+        myName[0] = device.getRegistration().getEndpoint();
         DeviceNames names = new DeviceNames( "LESHAN SMART " + device.getType() , null , myName );
 
         for( int a = 0; a<traits.length;a++)
