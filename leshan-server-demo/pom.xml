@@ -104,6 +104,7 @@ Contributors:
 			<artifactId>httpcore</artifactId>
 			<version>4.2.1</version>
 		</dependency>
+
         <!-- runtime dependencies -->
        <dependency>
             <groupId>ch.qos.logback</groupId>
