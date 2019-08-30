@@ -44,7 +44,7 @@ public class DeviceData{
 
         try{
 
-            ObjectInputStream savedDeviceData = new ObjectInputStream( new FileInputStream("leshan-server-demo/src/main/java/googleInterface/bin/device.bin"));
+            ObjectInputStream savedDeviceData = new ObjectInputStream( new FileInputStream("leshan-server-demo/src/main/java/googleInterface/savedData/device.bin"));
 
             int numDevices = savedDeviceData.readInt();  //  number of saved devices
             for( int a = 0; a<numDevices; a++ ) {
@@ -53,7 +53,7 @@ public class DeviceData{
               //  savedDevice.setServer( GoogleInterface.leshanServer ); //  necessita di un istanza del server istanziato
                 savedDevice.setOffline();  //  all'avvio del server li settiamo offline, quando si registreranno torneranno online
                 deviceData.put( savedDevice.id , savedDevice );
-                LOG.info( "load device from /bin/devices.bin ---> " + savedDevice.id );
+                LOG.info( "load device from /savedData/devices.bin ---> " + savedDevice.id );
 
             }
 
@@ -233,7 +233,7 @@ public class DeviceData{
 
         try {
 
-            ObjectOutputStream deviceContainer = new ObjectOutputStream(new FileOutputStream( "leshan-server-demo/src/main/java/googleInterface/bin/device.bin" ));
+            ObjectOutputStream deviceContainer = new ObjectOutputStream(new FileOutputStream( "leshan-server-demo/src/main/java/googleInterface/savedData/device.bin" ));
             Iterator<Device> deviceIterator = deviceData.values().iterator();
 
             deviceContainer.writeInt( deviceData.size());  //  si salva la dimensione

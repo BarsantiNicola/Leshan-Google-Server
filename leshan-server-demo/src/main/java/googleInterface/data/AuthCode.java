@@ -40,10 +40,10 @@ public class AuthCode implements Serializable {
 
         try {
 
-            ObjectInputStream authInput = new ObjectInputStream(new FileInputStream("leshan-server-demo/src/main/java/googleInterface/bin/auth.bin"));
+            ObjectInputStream authInput = new ObjectInputStream(new FileInputStream("leshan-server-demo/src/main/java/googleInterface/savedData/auth.bin"));
             AuthCode ret = (AuthCode) authInput.readObject();
             authInput.close();
-            LOG.info( "correctly loaded authentication data from bin/auth.bin");
+            LOG.info( "correctly loaded authentication data from savedData/auth.bin");
             return ret;
 
         }catch( IOException | ClassNotFoundException e ){
@@ -60,7 +60,7 @@ public class AuthCode implements Serializable {
 
         try{
 
-            ObjectOutputStream authOutput = new ObjectOutputStream(new FileOutputStream("leshan-server-demo/src/main/java/googleInterface/bin/auth.bin"));
+            ObjectOutputStream authOutput = new ObjectOutputStream(new FileOutputStream("leshan-server-demo/src/main/java/googleInterface/savedData/auth.bin"));
             authOutput.writeObject( this );
             authOutput.close();
             LOG.info( "authentication information correctly saved");
