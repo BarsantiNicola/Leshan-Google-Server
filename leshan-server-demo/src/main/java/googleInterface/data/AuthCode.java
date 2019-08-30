@@ -17,7 +17,8 @@ public class AuthCode implements Serializable {
     private String authCode;           // Authentication Grant Code dell'utente
     private String authToken;
     private String refreshToken;
-    private LocalDateTime expiresAt;  //  validità dell'authtoken
+    private
+    LocalDateTime expiresAt;  //  validità dell'authtoken
 
 
     //  genera un nuovo authtoken vuoto

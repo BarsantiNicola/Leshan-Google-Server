@@ -36,3 +36,6 @@ bin/
 **/*.der
 **/*.pem
 !**/src/**/*.der
+
+# Google Interface Saved Data #
+**googleInterface/bin/
