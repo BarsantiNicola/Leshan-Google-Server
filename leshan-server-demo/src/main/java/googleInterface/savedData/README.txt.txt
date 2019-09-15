@@ -1,5 +1,5 @@
-Nella cartella vengono mantenuti i salvataggi dei dati dell'utente.
+Nella cartella vengono mantenuti localmente i salvataggi dei dati necessari al server.
 
--Authdata.bin mantiene la classe serializzata dei codici di autenticazione Oauth2 dell'utente
+-Authdata.bin mantiene la classe serializzata dei Tokens Oauth2 dell'utente
 
--Device.bin mantiene i dispositivi dell'utente
+-Device.bin mantiene le classi serializzate dei dispositivi tradotti dell'utente

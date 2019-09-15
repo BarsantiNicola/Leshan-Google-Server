@@ -3,7 +3,7 @@ Il keystore mantiene solamente le chiavi rsa necessarie alla comunicazione https
 le chiavi delle comunicazioni in atto.
 
 
-   IL FILE KEYSTORE.JKS E' UTILIZZATO DALLA CLASSE GOOGLEINTERFACE/OAUTH2SERVER PER INIZIALIZZARE INTERFACCIA HTTPS
+   IL FILE KEYSTORE.JKS E' UTILIZZATO DALLA CLASSE googleinterface.GoogleInterface PER INIZIALIZZARE INTERFACCIA HTTPS
 
 
 

@@ -10,39 +10,33 @@ import com.fasterxml.jackson.annotation.JsonProperty;
     public class GoogleConfiguration {
 
         @JsonProperty("smarthomeEndpoint")
-        private String smartHomeEndpoint;
+        private String smartHomeEndpoint;  //  INDIRIZZO IP ASSEGNATO
 
-        @JsonProperty("smarthomePort")
+        @JsonProperty("smarthomePort")     //  PORTA UTILIZZATA DA INTERFACCIA HTTP
         private int smartHomePort;
 
-        @JsonProperty("smarthomeSecurePort")
+        @JsonProperty("smarthomeSecurePort")  //  PORTA UTILIZZATA DA INTERFACCIA HTTPS
         private int smartHomeSecurePort;
 
-        @JsonProperty("smarthomeSessionTime")
-        private long smartHomeSessionTime;
-
-        @JsonProperty("smarthomeRefreshTime")
+        @JsonProperty("smarthomeRefreshTime")  //  TIMER IN SECONDI DEL REFRESH DEI TOKEN
         private long smartHomeRefreshTime;
 
-        @JsonProperty("google_client_id")
+        @JsonProperty("google_client_id")   //  CLIENT_ID ACCETTATO DAL SERVIZIO
         private String googleClientId;
 
-        @JsonProperty("google_client_secret")
-        private String googleClientSecret;
+        @JsonProperty("google_APIkey")  //  API_KEY CREATA DA CREDENTIALS IN GOOGLE ACTIONS
+        private String googleAPIkey;   //  SERVE A ESEGUIRE RE_SYNC AL SERVIZIO NEL CLOUD GOOGLE
 
-        @JsonProperty("google_APIkey")
-        private String googleAPIkey;
-
-        @JsonProperty("service_Username")
+        @JsonProperty("service_Username")   //  NOME UTENTE UTILIZZATO NEL LOGIN
         private String serviceUsername;
 
-        @JsonProperty("service_Password")
+        @JsonProperty("service_Password")   //  PASSWORD UTILIZZATA NEL LOGIN
         private String servicePassword;
 
-        @JsonProperty("request_sync_endpoint")
+        @JsonProperty("request_sync_endpoint")   //  ENDPOINT GOOGLE A CUI EFFETTUARE RICHIESTE RESYNC
         private String requestSyncEndpoint;
 
-        @JsonProperty("agent_user_id")
+        @JsonProperty("agent_user_id")    //  AGENT_USER_ID ASSEGNATO ALL'UTENTE DA FORNIRE A GOOGLE PER IDENTIFICARLO
         private String agentUserId;
 
         public String getSmartHomeEndpoint(){  return smartHomeEndpoint;  }
@@ -53,15 +47,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
         public String getGoogleClientId(){ return googleClientId; }
 
-        public String getGoogleClientSecret(){ return googleClientSecret; }
-
         public String getGoogleAPIkey(){ return googleAPIkey; }
 
         public String getServiceUsername(){ return serviceUsername; }
 
         public String getServicePassword(){ return servicePassword; }
-
-        public long getSmartHomeSessionTime(){ return smartHomeSessionTime; }
 
         public long getSmartHomeRefreshTime(){ return smartHomeRefreshTime; }
 

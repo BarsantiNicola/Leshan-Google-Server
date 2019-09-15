@@ -10,7 +10,7 @@ import com.sun.net.httpserver.*;
 import javax.net.ssl.*;
 import java.security.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import googleInterface.data.AuthCode;
+import googleInterface.data.AuthServer;
 import googleInterface.data.GoogleConfiguration;
 import googleInterface.integration.LeshanGoogleConverter;
 import googleInterface.protocol.GoogleMessageHandler;
@@ -41,7 +41,7 @@ public class GoogleInterface{
     private HttpServer  httpInterface = null;
 
     //  DATI DELL'APPLICAZIONE
-    public static AuthCode authData;                        //  user's oauth2 tokens information
+    public static AuthServer authData;                        //  user's oauth2 tokens information
     public static GoogleConfiguration confData;            //  user's google jwt.json credentials information
     public static DeviceData deviceData;                    //  manager for user's devices
     public static LwM2mServer leshanServer;                 //  pointer to interact with the leshan lwm2m server
@@ -70,7 +70,7 @@ public class GoogleInterface{
         LOG.info( "server data configuration loaded from google_configuration/conf.json" );
 
         //  si caricano le informazioni salvate dell'utente
-        authData = AuthCode.getInstance();  //  richiede che credentials.confInit() sia stato eseguito
+        authData = AuthServer.getInstance();  //  richiede che credentials.confInit() sia stato eseguito
         deviceData = new DeviceData( null , null );
 
         startInterface();

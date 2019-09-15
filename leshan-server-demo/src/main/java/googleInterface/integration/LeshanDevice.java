@@ -28,6 +28,13 @@ public class LeshanDevice implements Serializable {
 
     LeshanDevice(Registration r, LwM2mServer s) throws Exception {
 
+		final String DEVICE_ID = "/1/0/0";
+		final String DEVICE_TYPE = "/3/0/17";
+		final String DEVICE_HW_VERSION = "/3/0/18";
+		final String DEVICE_SW_VERSION = "/3/0/19";
+		final String DEVICE_MODEL_NUMBER = "/3/0/1";
+		final String MANUFACTURER = "/3/0/0";
+		
         registration = r;
         server = s;
         deviceResource = new HashMap<>();
@@ -37,10 +44,10 @@ public class LeshanDevice implements Serializable {
         haveMandatoryObjects(mandatoryObject);  //  controllo siano presenti gli oggetti obbligatori
 
         //  si creano le informazioni generiche del dispositivo(usate poi anche da SYNC)
-        deviceId = Long.toString((Long) readResource(new LeshanResource("/1/0/0")));
-        type = (String) readResource(new LeshanResource("/3/0/17"));
+        deviceId = Long.toString((Long) readResource(new LeshanResource(DEVICE_ID)));
+        type = (String) readResource(new LeshanResource(DEVICE_TYPE));
 
-        deviceInfo = new DeviceInfo((String) readResource(new LeshanResource("/3/0/0")), (String) readResource(new LeshanResource("/3/0/1")), (String) readResource(new LeshanResource("/3/0/18")), (String) readResource(new LeshanResource("/3/0/19")));
+        deviceInfo = new DeviceInfo((String) readResource(new LeshanResource(MANUFACTURER)), (String) readResource(new LeshanResource(DEVICE_MODEL_NUMBER)), (String) readResource(new LeshanResource(DEVICE_SW_VERSION)), (String) readResource(new LeshanResource(DEVICE_HW_VERSION)));
         LOG.info("leshan's device correctly created " + deviceId);
 
     }

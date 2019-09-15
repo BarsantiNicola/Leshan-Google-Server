@@ -10,9 +10,9 @@ import java.io.*;
   //  oggetto per gestire le credenziali di access delegation dell'utente definito in conf.json
   //  il refresh time e l'utente sono definiti in google_configuration/conf.json file
 
-public class AuthCode implements Serializable {
+public class AuthServer implements Serializable {
 
-    private static final MyLogger LOG = new MyLogger( AuthCode.class);
+    private static final MyLogger LOG = new MyLogger( AuthServer.class);
 
     private String authCode;           // Authentication Grant Code dell'utente
     private String authToken;
@@ -23,7 +23,7 @@ public class AuthCode implements Serializable {
 
     //  genera un nuovo authtoken vuoto
 
-    private AuthCode(){
+    private AuthServer(){
 
         authToken = null;
         refreshToken = null;
@@ -36,19 +36,19 @@ public class AuthCode implements Serializable {
     //  funzione da utilizzare per ottenere un istanza oAuth, se presente localmente la carica altrimenti inizializza
     //  un'istanza vuota
 
-    public static AuthCode getInstance(){
+    public static AuthServer getInstance(){
 
         try {
 
             ObjectInputStream authInput = new ObjectInputStream(new FileInputStream("leshan-server-demo/src/main/java/googleInterface/savedData/auth.bin"));
-            AuthCode ret = (AuthCode) authInput.readObject();
+            AuthServer ret = (AuthServer) authInput.readObject();
             authInput.close();
             LOG.info( "correctly loaded authentication data from savedData/auth.bin");
             return ret;
 
         }catch( IOException | ClassNotFoundException e ){
             LOG.info( "unable to find a valid authentication binary file, load default setting");
-            return new AuthCode();  //  se non è presente un salvataggio creo un contenitore vuoto da inizializzare
+            return new AuthServer();  //  se non è presente un salvataggio creo un contenitore vuoto da inizializzare
         }
 
     }
@@ -110,7 +110,7 @@ public class AuthCode implements Serializable {
 
         authToken = randomStringGen();
         refreshToken = randomStringGen();
-        expiresAt = LocalDateTime.now().plusSeconds( GoogleInterface.confData.getSmartHomeSessionTime());
+        expiresAt = LocalDateTime.now().plusSeconds( GoogleInterface.confData.getSmartHomeRefreshTime());
 
         LOG.info( "generated new tokens for authentication");
     }
